@@ -10,7 +10,6 @@ const db_user= process.env.db_user;
 const db_password= process.env.db_password;
 const db= process.env.db;
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'public')));
 // Create a connection to the MySQL database
 const connection = mysql.createConnection({
     host:db_host ,
